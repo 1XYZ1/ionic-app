@@ -1,0 +1,28 @@
+<ion-header class="ion-margin-bottom" no-border>
+    <ion-toolbar color="dark">
+        <ion-title>
+
+            <ion-button color="tertiary">Pendiente
+                <ion-icon size="large" slot="end" name="list"></ion-icon>
+            </ion-button>
+        </ion-title>
+
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="animated fadeInDown" color="dark">
+
+    <app-listas [terminada]="false"></app-listas>
+
+
+
+    <!-- Boton Agregar -->
+
+    <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+        <ion-fab-button color="tertiary" (click)="agregarLista()">
+            <ion-icon name="add"></ion-icon>
+        </ion-fab-button>
+    </ion-fab>
+
+
+</ion-content>
